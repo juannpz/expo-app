@@ -1,15 +1,15 @@
 export enum Routes {
-  ONBOARDING = 'Onboarding',
-  AUTH = 'Auth',
-  MAIN_APP = 'MainApp',
+    ONBOARDING = 'Onboarding',
+    AUTH = 'Auth',
+    MAIN_APP = 'MainApp',
 
-  LOGIN = 'Login',
-  REGISTER = 'Register',
-  FORGOT_PASSWORD = 'ForgotPassword',
+    LOGIN = 'Login',
+    REGISTER = 'Register',
+    FORGOT_PASSWORD = 'ForgotPassword',
 
-  WELCOME = 'Welcome',
+    WELCOME = 'Welcome',
 
-  HOME = 'Home',
-  PROFILE = 'Profile',
-  SETTINGS = 'Settings',
+    HOME = 'Home',
+    PROFILE = 'Profile',
+    SETTINGS = 'Settings',
 }
