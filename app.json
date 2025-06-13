@@ -50,9 +50,11 @@
         "assetBundlePatterns": ["**/*"],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.anonymous.expoapp"
+            "bundleIdentifier": "com.anonymous.expoapp",
+            "googleServicesFile": "./GoogleService-Info.plist"
         },
         "android": {
+            "googleServicesFile": "./google-services.json",
             "edgeToEdgeEnabled": true,
             "adaptiveIcon": {
                 "foregroundImage": "./assets/adaptive-icon.png",
