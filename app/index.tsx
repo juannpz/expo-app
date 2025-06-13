@@ -5,8 +5,8 @@ import '../global.css';
 export default function Index() {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            <Link href="/auth/login">LOGIN</Link>
-            <Link href="/dashboard/settings">SETTINGS</Link>
+            <Link href="/test/sqlite">SQLITE</Link>
+            <Link href="/dashboard/settings">FIREBASE</Link>
         </View>
     );
 }

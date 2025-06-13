@@ -46,13 +46,13 @@ export function buildResponse<T, E, A>(
             };
         }
 
-        if ((error as any) instanceof Error) {
+        if (error instanceof Error) {
             const httpCode = extractHttpErrorCode(error);
             return {
                 ...response,
-                message: (error as any).message ?? 'An unknown error occurred',
+                message: error.message ?? 'An unknown error occurred',
                 code: httpCode ?? defaultErrorCode,
-                errorType: errorType ?? (error as any).name,
+                errorType: errorType ?? error.name,
             };
         }
 
@@ -84,8 +84,8 @@ export function extractHttpErrorCode(error: unknown) {
         return error.response?.status;
     }
 
-    if ((error as any) instanceof Error && 'code' in (error as any)) {
-        const code = (error as any).code;
+    if (error instanceof Error && 'code' in error) {
+        const code = error.code;
         if (typeof code === 'number') {
             return code;
         }

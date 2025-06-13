@@ -2,6 +2,7 @@ import Storage from 'expo-sqlite/kv-store';
 import { buildResponse, GenericResponse } from 'utils/response.util';
 
 import { ISqliteStorageProps } from './sqlite.definition';
+import { DeepPartial } from 'types';
 
 export class SqliteManager {
     private constructor() {}
@@ -17,7 +18,7 @@ export class SqliteManager {
      * @returns A Promise resolving to a GenericResponse indicating success or failure.
      */
     public static async set(
-        props: Partial<ISqliteStorageProps>
+        props: DeepPartial<ISqliteStorageProps>
     ): Promise<GenericResponse<{ message: 'OK' }>> {
         const keyValuePairs: [string, string][] = [];
 

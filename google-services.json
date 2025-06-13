@@ -1,0 +1,30 @@
+{
+    "project_info": {
+        "project_number": "360507756577",
+        "firebase_url": "https://fir-validation-53710-default-rtdb.firebaseio.com",
+        "project_id": "fir-validation-53710",
+        "storage_bucket": "fir-validation-53710.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:360507756577:android:1bd901e89c7058000fd360",
+                "android_client_info": {
+                    "package_name": "me.viio.wallet.v2.test"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyACPNLFEbDUYAZlY0LA3AKLeeSLoKrIbiA"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
